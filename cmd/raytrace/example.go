@@ -3,7 +3,7 @@ package main
 import . "github.com/danielchatfield/raytracer"
 
 func main() {
-	camera := NewCamera(500, 400)
+	camera := NewCamera(1920, 1080)
 	sphere := Sphere{
 		Object: Object{
 			Ambient:  0.9,

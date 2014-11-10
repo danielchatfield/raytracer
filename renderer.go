@@ -69,6 +69,7 @@ func (r *Renderer) renderPixel(x int, y int) {
 	color := color.NRGBA{0, 0, 0, 255}
 
 	if minDistance != -1 {
+		// compute all rays from light sources
 		color = collisionObject.getColor(collisionPosition)
 	}
 
